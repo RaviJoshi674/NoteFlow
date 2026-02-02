@@ -1,0 +1,58 @@
+# ========================
+# Node.js
+# ========================
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-lock.yaml
+
+# ========================
+# Python
+# ========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# ========================
+# Uploads / Generated Files
+# ========================
+uploads/
+worker/uploads/
+*.mp3
+*.wav
+
+# ========================
+# Docker
+# ========================
+*.log
+.dockerignore
+
+# ========================
+# Environment / Secrets
+# ========================
+.env
+.env.*
+
+# ========================
+# OS / Editor
+# ========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ========================
+# Build / Cache
+# ========================
+dist/
+build/
+.cache/
+
+# ========================
+# Database (optional)
+# ========================
+*.db
