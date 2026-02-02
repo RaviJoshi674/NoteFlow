@@ -24,7 +24,7 @@ Run the following command in the project root:
 docker-compose up --build
 ```
 This will start PostgreSQL, Redis, API, and Worker services.
-- API running at: `http://localhost:3000`
+- API running at: `http://localhost:4000`
 
 ### 2. Verify with Automated Test Client
 We have provided a script `test_client.py` to make testing easy.
@@ -52,13 +52,13 @@ python test_client.py test_audio_valid.wav
 If you prefer manual testing:
 ```bash
 # Upload
-curl -X POST -F "audio=@test_audio_valid.wav" http://127.0.0.1:3000/upload
+curl -X POST -F "audio=@test_audio_valid.wav" http://127.0.0.1:4000/upload
 
 # Check Status (replace <id>)
-curl http://127.0.0.1:3000/lectures/<lecture-id>/status
+curl http://127.0.0.1:4000/lectures/<lecture-id>/status
 
 # Get Results
-curl http://127.0.0.1:3000/lectures/<lecture-id>/results
+curl http://127.0.0.1:4000/lectures/<lecture-id>/results
 ```
 
 ## Features Implemented
